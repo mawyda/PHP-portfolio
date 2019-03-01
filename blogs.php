@@ -6,7 +6,7 @@
 		require "config.php";
 		$connection = new PDO($dsn, $username, $password, $options);
 		// sql query 
-		$sql = "SELECT * FROM blogs";
+		$sql = "SELECT * FROM blogs ORDER BY id DESC";
 		//
 		//$statement = $connection->prepare($sql);
 		// removing the bind statement for now...
@@ -26,21 +26,16 @@
 	<head>
 		<title>Blog Posts</title> 
 		
-		<link rel= "stylesheet" href="css/style.css">
+		<link rel= "stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
+		<div class="container">
 		<?php include "templates/header.php"; ?>
 		
 		<!-- Individual blog posts will go here, with imgs, probably -->
 		<main class="">
 			<br />	
-			<!-- Need the code for grabbing the blog data 
-
-			For now, just build out the forms to send to the other page: 
-			-->
 			<a href="create.php">Create New Post</a>
-		
-			<!-- This will need to get moved to a new page, but for now simply show the posts. -->
 			<br />			
 			<hr /> 
 			<br />			
@@ -61,8 +56,9 @@
 						<!-- Is escaping the html necessary here? -->
 						<h3><?php echo $row['title']; ?></h3>
 						<span id="timestamp"><?php echo $row['date']; ?></span>
-						<!-- Need to sort out the image deal below.... -->		
-						<img src=""></img>
+						<!-- Need to sort out the image deal below.... -->
+						
+						<img src="<?php echo $row['image']; ?>" />
 						<p><?php echo $row['contents']; ?></p>
 						<br />
 						<hr />
@@ -71,11 +67,11 @@
 			</ul>
 		</main>
 		<br />			
-			<hr /> 
+		<hr /> 
 	</body>	
 	<br />
 	<?php include "templates/footer.php"; ?>
-		
+	</div>	
 </html>
 
 
