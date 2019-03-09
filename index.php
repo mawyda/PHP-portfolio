@@ -7,20 +7,25 @@
 	</head>
 	
 	<body>
-		<div class="container">
+		<div id="container">
 		<?php include "templates/header.php"; ?> 
 		
 		<!-- Contents of the page -->
-		<main class="main">
-			<div class="intro">
+		<main id="main"> <!-- Main will need changed... -->
+			<div id="intro">
 				<!-- Include an image and caption here. -->
-				<h1>Hello World!!</h1>
-				<br />
-				<?php echo "Today's date is: " . date('F d, Y') ?>
-				<br />
+				<div id="greeting">
+					<h1>Hello World!!</h1>
+					<?php echo "Today's date is: " . date('F d, Y') ?>
+				</div>
+
+				<div id="image_div">
+					<!-- there will be a picture here...-->
+					<img id="home_image" src="../static/home_image.jpg" />
+				</div>
 			</div> 
-			<div class="about">
-				
+			<div id="about">
+				<h2>About Me</h2>
 				<p>My name is Matt Dalton and I like to code. I currently work in a role that requires understanding of a lot of different programming principles. I am currently working towards proficiency in Full Stack Web Dev and Data Science. 
 				PHP is a new language for me, but I intend to become a master in it.</p>
 			</div> 
