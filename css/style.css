@@ -1,3 +1,5 @@
+/*For PHP portfolio project */
+
 body {
 	background-color: #96A9BA;
 }
@@ -21,22 +23,30 @@ h1 {
 	background-color: #294A68;
 	/*fix the color later...*/
 	/* this isn't cascading into it's children divs, for some reason. Is it because the links have been clicked on? */
-	color: white;
+	/*color: white;*/
 	padding: 10px;
+	height: 50px;
 }
 
 #nav_left {
 	float: left;
-	display: inline;
+	/*display: inline;*/
+	padding: 10px;
+}
+
+#nav_left a{
+	text-align: center;
+	text-decoration: none;
+	color: #C9D3DD;
 }
 
 #nav_right {
 	/* Not necessary, but explicit...*/
 	/*Q?: flaot and display: imline = redundant? */
 	float: right;
-	display: inline;
+	/*display: inline;*/
 	margin-right: 10px;
-	width: 100px;
+	/*width: 100px;*/
 }
 
 #nav_right ul {
@@ -45,10 +55,17 @@ h1 {
 	padding: 0;
 }
 
-#navbar_right li {
+#nav_right li {
 	float: left;
-	display: inline;
-	width: 50px;
+	/*display: inline;*/
+	/*width: 50px;*/
+	padding: 10px 5px;
+}
+
+#nav_right a {
+	text-align: center;
+	text-decoration: none;
+	color: #C9D3DD;
 }
 
 /*Note: greeting, image, and home_image were worked on before the intro div was checked. These didn't seem to work and would not center the image as needed. 
@@ -87,4 +104,10 @@ Does this suggest working with bigger containers first before getting to childre
 
 #home_image {
 	width: 400px;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #C9D3DD;
+	padding: 10px 5px;
 }
