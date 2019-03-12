@@ -61,27 +61,28 @@
 		<link rel= "stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<?php include "templates/header.php"; ?>
+		<div id="container">
+			<?php include "templates/header.php"; ?>
+			<br />
+			<?php echo $msg; ?>
+			<?php echo $msg2; ?>
+			<br />
+			<br />
+			<main>
+				<div class="new_post">
+					<form enctype="multipart/form-data" action="create.php" method="POST">
+						<label for="title">Title:</label>
+						<input type="title" name="title" id="title"  />
+						<label for="contents">Contents:</label>
+						<input type="textarea" name="contents" id="contents"  />
+						<label for="image">Image:</label>
+						<input type="file" name="image" id="image"  />
+						<input type="submit" name="submit" value="Post It!" />
+					</form>
+				</div>
+			</main>
 		<br />
-		<?php echo $msg; ?>
-		<?php echo $msg2; ?>
-		<br />
-		<br />
-		<main>
-			<div class="new_post">
-				<form enctype="multipart/form-data" action="create.php" method="POST">
-					<label for="title">Title:</label>
-					<input type="title" name="title" id="title"  />
-					<label for="contents">Contents:</label>
-					<input type="textarea" name="contents" id="contents"  />
-					<label for="image">Image:</label>
-					<input type="file" name="image" id="image"  />
-					<input type="submit" name="submit" value="Post It!" />
-				</form>
-			</div>
-		</main>
-	
+		<?php include "templates/footer.php"; ?>
+		</div> 
 	</body>
-	<br />
-	<?php include "templates/footer.php"; ?>
 </html>

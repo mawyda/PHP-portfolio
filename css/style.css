@@ -111,3 +111,25 @@ Does this suggest working with bigger containers first before getting to childre
 	color: #C9D3DD;
 	padding: 10px 5px;
 }
+
+/*Blog stuff */
+
+/*Note: Hoping this floats right for its parent, ind_blog*/
+#blog_img {
+	float: right;
+}
+
+#blog_img img {
+	width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
