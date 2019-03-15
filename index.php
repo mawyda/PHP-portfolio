@@ -26,8 +26,11 @@
 			</div> 
 			<div id="about">
 				<h2>About Me</h2>
-				<p>My name is Matt Dalton and I like to code. I currently work in a role that requires understanding of a lot of different programming principles. I am currently working towards proficiency in Full Stack Web Dev and Data Science. 
-				PHP is a new language for me, but I intend to become a master in it.</p>
+				<p>My name is Matt Dalton and I love to code. I currently work in a role that requires understanding of a lot of different programming principles. Currently, I am working towards proficiency in Full Stack Web Dev and Data Science. </p>
+				<p>
+				This site was written in PHP, which is a brand new language for me. The purpose was to challenge myself and expand my Dev ecosystem. 
+				I am currently hoping to find employment where I can grow and work with others.
+				</p>
 			</div> 
 		</main>
 		

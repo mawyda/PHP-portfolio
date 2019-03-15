@@ -11,19 +11,12 @@ h1 {
 #container {
 	background-color: #C9D3DD;
 	width: 800px;
-	/*Center the site */
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #header, #footer {
-	/* Note: Margins here look bad. Margin on the main stuff may be ok.
-	/*margin-left: 20px;
-	margin-right: 20px; */
 	background-color: #294A68;
-	/*fix the color later...*/
-	/* this isn't cascading into it's children divs, for some reason. Is it because the links have been clicked on? */
-	/*color: white;*/
 	padding: 10px;
 	height: 50px;
 }
@@ -41,8 +34,6 @@ h1 {
 }
 
 #nav_right {
-	/* Not necessary, but explicit...*/
-	/*Q?: flaot and display: imline = redundant? */
 	float: right;
 	/*display: inline;*/
 	margin-right: 10px;
@@ -57,8 +48,6 @@ h1 {
 
 #nav_right li {
 	float: left;
-	/*display: inline;*/
-	/*width: 50px;*/
 	padding: 10px 5px;
 }
 
@@ -68,13 +57,8 @@ h1 {
 	color: #C9D3DD;
 }
 
-/*Note: greeting, image, and home_image were worked on before the intro div was checked. These didn't seem to work and would not center the image as needed. 
-Somehow adding padding first to intro got things moving in the direction needed. 
-Does this suggest working with bigger containers first before getting to children??
-*/
+
 #intro {
-	/*padding: 0 20px 0 20px;*/
-	/*TEST */
 	padding: 10px;
 	clear: both;
 }
@@ -83,22 +67,9 @@ Does this suggest working with bigger containers first before getting to childre
 	text-align: center;
 }
 
-/* This needs a better name... */
+
 #image_div {
-	/* margins not working....*/
-	/* a: 
-		is the block display necessary? */
-	/*display: block;*/
-
-	/*margin-left: 150px; THIS IS GOOD TO USE*/
 	margin-left: 180px;
-	/*margin-right: 180px;*/
-	/* Use the padding of the parent, or margin here? */
-/*
-	margin-top: 20 px;
-	margin-bottom: 20px; */
-
-	/* this will be good to use. */
 	padding: 10px;
 }
 
@@ -151,12 +122,10 @@ Does this suggest working with bigger containers first before getting to childre
 	list-style-type: none;
 }
 
-/*Note: Hoping this floats right for its parent, ind_blog*/
 #blog_img {
 	float: right;
 	margin: 10px;
 	display: inline;
-	/*clear: both;  this is really bad... */
 	width: 350px;
 }
 
@@ -167,8 +136,6 @@ Does this suggest working with bigger containers first before getting to childre
 
 #blog_text {
 	padding: 10px;
-	/*margin-top: 10px;*/
-	/*float: bottom; */
 	clear: both;
 }
 
