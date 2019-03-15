@@ -33,48 +33,51 @@
 		<?php include "templates/header.php"; ?>
 		
 		<!-- Individual blog posts will go here, with imgs, probably -->
-		<main class="">
-			<br />	
-			<a href="create.php">Create New Post</a>
-			<br />		
-			<div class="blog_posts">
-			<!-- foreach entry in the db, pull the data, show it in html.
-			Better to create a new page for each? I don't have a controller for urls 
-			though.
-			-->
-			<h3>Check out our blogs</h3>
+			<div id="blog_intro">
+				<!--<main class="">-->
+				<h3>Check out our blogs</h3>
+				<br />	
+				<a href="create.php">Create New Post</a>
+				<br />		
+				<!-- <div class="blog_posts"> -->
+
+				
 			</div>
-			<hr /> 
-			<br />
+			<hr />
 			<div id="blogs">
-			<ul>	
+				<ul>	
 				<!-- Add an if loop to check if there is any data to display?? -->
 				<?php foreach ($result as $row) { ?>
 					<!-- ul for each item? -->
 					<div id="ind_blog">
 						<li>
 							<!-- Is escaping the html necessary here? -->
-							<h3><?php echo $row['title']; ?></h3>
-							<span id="timestamp"><?php echo $row['date']; ?></span>
-							<!-- Need to sort out the image deal below.... -->
-							<div id="blog_img">
-								<img src="<?php echo $row['image']; ?>" />
+							<div id="top_blog">
+								<div id="blog_header">
+									<h3><?php echo $row['title']; ?></h3>
+									<span id="timestamp"><?php echo $row['date']; ?></span>
+								</div>
+								<div id="blog_img">
+									<img src="<?php echo $row['image']; ?>" />
+								</div>
 							</div>
-							<p><?php echo $row['contents']; ?></p>
+							<div id="blog_text">
+								<p><?php echo $row['contents']; ?></p>
+							</div>
 							<br />
 							<hr />
 						</li>
 					</div>
 				<?php } ?>
-			</ul>
+				</ul>
 			</div>
-		</main>
+		<!--</main>-->
 		<br />			
-		<hr /> 
-	</body>	
-	<br />
-	<?php include "templates/footer.php"; ?>
-	</div>	
+		<!--<hr />-->
+			<br />
+			<?php include "templates/footer.php"; ?>
+		</div>
+	</body>		
 </html>
 
 
